@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Newsletter Signup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    
+  <div class="container">
+    <div class="form-section">
+      <h1>Subscribe to Our Newsletter</h1>
+      <p class="subtitle">Get internship updates, career tips & tech insights</p>
+
+      <form id="newsletterForm" novalidate>
+        <div class="form-group">
+          <input type="text" id="fullName" placeholder="Full Name" />
+          <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Email Address" />
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <button type="submit" id="subscribeBtn">Subscribe</button>
+        <p class="privacy-note">We respect your privacy. No spam ever.</p>
+        <p id="successMessage" class="success-message"></p>
+      </form>
+    </div>
+
+    <div class="image-section">
+      <img src="Interactive-digital-newsletter-made-with-Flipsnack.png" alt="Newsletter" />
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
